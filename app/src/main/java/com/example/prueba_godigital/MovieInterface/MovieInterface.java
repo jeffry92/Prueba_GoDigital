@@ -13,7 +13,7 @@ public interface MovieInterface {
     String API_ROUT="popular?api_key=45844491d0d17546d56506d1dc7a28c5&page=";
 
     @GET(API_ROUT)
-    Call<Movie> getMovies(@Query("page") String idPage);
+    Call<Movie> getMovies(@Query("page") int idPage);
 
 
 }
